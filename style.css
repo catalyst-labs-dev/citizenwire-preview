@@ -161,3 +161,23 @@ header.top,.jump{background:#FBF8F1}
 .contest h3{font-size:16px;line-height:1.35;margin:0 0 var(--s2)}.contest p{margin:0 0 var(--s2)}.contest p:last-child{margin-bottom:0}
 .contest .cands{margin:var(--s3) 0;padding:0;list-style:none}.contest .cands li{padding:var(--s2) 0;border-top:1px solid var(--panelline);overflow-wrap:anywhere}.contest .cands li:last-child{border-bottom:1px solid var(--panelline)}
 @media(max-width:480px){.contest{padding:var(--s5) var(--s4)}}
+/* two-row header: bigger brand, links on own row */
+header.top .bar{display:grid;grid-template-columns:auto auto minmax(0,1fr) auto;width:100%;box-sizing:border-box;grid-template-areas:"brand draft . search" "menu menu menu menu";align-items:center;gap:0 .75rem;max-height:none;min-height:0;padding-top:.6rem;padding-bottom:0}
+header.top .brand{grid-area:brand;gap:.6rem}
+header.top .brand img{width:clamp(34px,10vw,44px);height:clamp(34px,10vw,44px)}
+header.top .wm{display:inline!important;font-size:clamp(17px,5.6vw,26px);letter-spacing:.03em}
+header.top .draft{grid-area:draft}header.top .sbox{grid-area:search;justify-self:end}
+header.top .menu{grid-area:menu;margin-top:.45rem;border-top:1px solid var(--line);gap:clamp(1rem,5vw,2rem);font-size:clamp(.875rem,3.9vw,1rem);padding-top:.1rem;padding-bottom:.1rem}
+@media(min-width:56rem){header.top .menu{-webkit-mask-image:none;mask-image:none}}
+@media(max-width:21rem){header.top .wm{font-size:15px}header.top .bar{gap:0 .5rem}}
+@media(min-width:56rem){.jump{top:calc(6.4rem + env(safe-area-inset-top))}[id]{scroll-margin-top:10rem}}
+[id]{scroll-margin-top:7.5rem}
+header.top .menu{min-width:0;width:100%;box-sizing:border-box}header.top .bar>*{min-width:0}
+@media(min-width:56rem){header.top .sbox{min-width:16rem}}
+/* official contact cards */
+.ocards{list-style:none;margin:var(--s5) 0 0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:var(--s3)}
+@media(min-width:34rem){.ocards{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(min-width:56rem){.ocards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.ocard{background:#fff;border:1px solid var(--panelline);border-radius:var(--r);padding:var(--s4);display:flex;flex-direction:column;gap:var(--s1);min-width:0;font-size:15px;line-height:1.4}
+.ocard .oname{font-size:16px;color:var(--ink)}.ocard .oseat{font:700 12px/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin-bottom:var(--s1)}
+.ocard a{overflow-wrap:anywhere;word-break:break-word}
+@media(prefers-color-scheme:dark){.ocard{background:var(--bg)}}
