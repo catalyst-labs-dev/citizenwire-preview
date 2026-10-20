@@ -208,3 +208,11 @@ header.top a:focus-visible,.sbox summary:focus-visible,.search input:focus-visib
 /* race title header band: reuses --panelline (#E6DFCF), the cream panel border/divider shade */
 .contest>h3:first-child{background:var(--panelline);margin:calc(-1*var(--s6)) calc(-1*var(--s5)) var(--s4);padding:var(--s3) var(--s5);border-radius:0 var(--r) 0 0;overflow-wrap:anywhere;text-wrap:balance}
 @media(max-width:480px){.contest>h3:first-child{margin:calc(-1*var(--s5)) calc(-1*var(--s4)) var(--s3);padding:var(--s3) var(--s4)}}
+
+/* next-election box */
+.nextd{background:var(--panel);border:1px solid var(--panelline);border-left:3px solid var(--g);border-radius:0 var(--r) var(--r) 0;padding:var(--s5);margin:var(--s4) 0}
+.nextd p{margin:0 0 var(--s2)}.nextd p:last-child{margin:0}
+.nd-date{font-weight:700;font-size:clamp(1rem,5.2vw,1.375rem);line-height:1.25}.nd-date span{white-space:nowrap}
+.nd-type{font-weight:600;color:var(--g)}
+.contest>h3:first-child,.label,h2,.contest .cands b{text-wrap:nowrap}
+.contest>h3:first-child{font-size:clamp(.875rem,4.1vw,1rem);white-space:normal}
