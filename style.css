@@ -156,3 +156,8 @@ header.top,.jump{background:#FBF8F1}
 @media(max-width:480px){.lead{padding:var(--s5) var(--s4)}.card,.box,.quiet .box,.two>.box{padding:var(--s4)!important}td,th{padding:var(--s2) var(--s2)}h2,.lead h2{font-size:clamp(16px,4.6vw,20px)}}
 .facts li{white-space:normal}
 
+/* ballot: each contest as a Vote-style panel */
+.contest{background:var(--panel);border:1px solid var(--panelline);border-left:3px solid var(--g);border-radius:0 var(--r) var(--r) 0;padding:var(--s6) var(--s5);margin:var(--s4) 0 0}
+.contest h3{font-size:16px;line-height:1.35;margin:0 0 var(--s2)}.contest p{margin:0 0 var(--s2)}.contest p:last-child{margin-bottom:0}
+.contest .cands{margin:var(--s3) 0;padding:0;list-style:none}.contest .cands li{padding:var(--s2) 0;border-top:1px solid var(--panelline);overflow-wrap:anywhere}.contest .cands li:last-child{border-bottom:1px solid var(--panelline)}
+@media(max-width:480px){.contest{padding:var(--s5) var(--s4)}}
