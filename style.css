@@ -204,3 +204,7 @@ header.top a:focus-visible,.sbox summary:focus-visible,.search input:focus-visib
  .search.dsk .sres{position:absolute;left:0;right:0;top:100%}
  .jump{top:calc(4.125rem + env(safe-area-inset-top))}[id]{scroll-margin-top:8rem}}
 [id]{scroll-margin-top:7rem}
+
+/* race title header band: reuses --panelline (#E6DFCF), the cream panel border/divider shade */
+.contest>h3:first-child{background:var(--panelline);margin:calc(-1*var(--s6)) calc(-1*var(--s5)) var(--s4);padding:var(--s3) var(--s5);border-radius:0 var(--r) 0 0;overflow-wrap:anywhere;text-wrap:balance}
+@media(max-width:480px){.contest>h3:first-child{margin:calc(-1*var(--s5)) calc(-1*var(--s4)) var(--s3);padding:var(--s3) var(--s4)}}
