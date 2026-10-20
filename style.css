@@ -1,0 +1,47 @@
+:root{--g:#29603F;--ink:#111;--mut:#4a4a4a;--line:#e3e3e3;--bg:#fff;--soft:#f5f7f5}
+@media(prefers-color-scheme:dark){:root{--g:#7fc49a;--ink:#f2f2f2;--mut:#bdbdbd;--line:#333;--bg:#121212;--soft:#1c1f1d}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+h1,h2,h3,.wm{font-family:"DejaVu Sans Mono",monospace;font-weight:700;letter-spacing:.02em}
+a{color:var(--g)}.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}.bar{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}.brand img{width:32px;height:32px}.wm{font-size:18px}
+nav{display:flex;gap:18px;font-size:15px}nav a{color:var(--ink);text-decoration:none;font-weight:600}
+.search{flex:1;min-width:200px}.search input{width:100%;padding:9px 12px;border:1px solid var(--mut);border-radius:6px;font:inherit;background:var(--bg);color:var(--ink)}
+.crumb{font-size:14px;color:var(--mut);padding:16px 0 0}.crumb a{color:var(--mut)}
+.label{display:inline-block;font:700 12px "DejaVu Sans Mono",monospace;color:var(--g);text-transform:uppercase;letter-spacing:.08em}
+.badge{display:inline-block;border:2px solid var(--g);color:var(--g);font:700 12px "DejaVu Sans Mono",monospace;padding:3px 8px;text-transform:uppercase;margin:16px 0 0}
+section{padding:28px 0;border-bottom:1px solid var(--line)}h1{font-size:28px;line-height:1.25;margin:8px 0}h2{font-size:18px;margin:4px 0 12px}
+.card{border:1px solid var(--line);border-radius:8px;padding:16px;margin:12px 0;background:var(--bg)}.card h3{font-size:16px;margin:6px 0}
+.meta{color:var(--mut);font-size:14px}.chips{display:flex;flex-wrap:wrap;gap:10px}.chip{border:1.5px solid var(--g);color:var(--g);border-radius:999px;padding:6px 14px;text-decoration:none;font-weight:600}
+.btn{display:inline-block;background:var(--g);color:#fff;padding:10px 16px;border-radius:6px;text-decoration:none;font-weight:700}
+@media(prefers-color-scheme:dark){.btn{color:#111}}
+table{width:100%;border-collapse:collapse;font-size:15px}td,th{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line)}
+.two{display:grid;gap:16px}.box{background:var(--soft);border-radius:8px;padding:16px}
+footer{padding:28px 0;color:var(--mut);font-size:14px}
+@media(min-width:800px){.two{grid-template-columns:1fr 1fr}h1{font-size:34px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}}
+.lead{border-left:6px solid var(--g);background:var(--soft);padding:28px 22px;margin:24px 0;border-radius:0 8px 8px 0;border-bottom:none}
+.lead h2{font-size:22px}.lead .label{font-size:13px}
+.hero h1{font-size:32px}@media(min-width:800px){.hero h1{font-size:42px}.lead h2{font-size:26px}}
+.quiet{font-size:15px;color:var(--mut)}.quiet .box{background:none;border:1px solid var(--line)}
+.imp{display:grid;gap:4px;padding:14px 0;border-bottom:1px solid var(--line)}.imp:last-child{border:none}
+.imp h3{font-size:16px;margin:0}.imp dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:2px 12px;font-size:15px}.imp dt{font-weight:700}.imp dd{margin:0}
+@media(min-width:800px){.imp{grid-template-columns:220px 1fr}}
+.big{font:700 40px "DejaVu Sans Mono",monospace;color:var(--g)}
+.about{max-width:68ch;margin-top:20px;padding-top:16px;border-top:1px solid var(--line);font-size:17px}.about p{margin:6px 0 10px}
+/* mobile fit (Oct 20) */
+.label{white-space:nowrap}
+.facts,.tally{list-style:none;padding:0;margin:8px 0 0;color:var(--mut);font-size:15px}
+.facts li,.tally li{white-space:nowrap}
+.tally{font:700 17px "DejaVu Sans Mono",monospace;color:var(--ink);display:flex;flex-wrap:wrap;gap:4px 18px;margin:4px 0 14px}
+.sub{font-size:17px;margin:16px 0 4px}
+.big{font-size:clamp(30px,9vw,40px);white-space:nowrap}
+.big2{font:700 22px "DejaVu Sans Mono",monospace;color:var(--g);margin:0 0 8px;white-space:nowrap}
+.failed{margin-top:24px}.failed p{margin:4px 0}
+.lead h2{font-size:clamp(17px,4.8vw,26px)}
+td{white-space:nowrap}
+@media(max-width:480px){.lead{padding:22px 16px}.wrap{padding:0 16px}.tally{display:block}}
+.box h3{font-size:16px;white-space:nowrap}
+.contest{padding:14px 0;border-bottom:1px solid var(--line)}.contest h3{margin:0;font-size:17px}.contest p{margin:4px 0}
+.cands{list-style:none;padding:0;margin:8px 0}.cands li{padding:4px 0}
+.facts.wrapok li{white-space:normal;margin:6px 0}
+.vinfo{padding-left:18px;font-size:15px}.vinfo li{margin:6px 0}
