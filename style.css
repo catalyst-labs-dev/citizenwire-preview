@@ -216,3 +216,5 @@ header.top a:focus-visible,.sbox summary:focus-visible,.search input:focus-visib
 .nd-type{font-weight:600;color:var(--g)}
 .contest>h3:first-child,.label,h2,.contest .cands b{text-wrap:nowrap}
 .contest>h3:first-child{font-size:clamp(.875rem,4.1vw,1rem);white-space:normal}
+
+.cal-d{font-weight:600;color:var(--g);white-space:nowrap}
