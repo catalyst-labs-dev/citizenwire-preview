@@ -248,3 +248,9 @@ a.pcard:hover,a.pcard:focus-visible{border-color:currentColor}
 .aem{width:100%;max-width:420px;min-height:44px;font-size:16px;padding:0 10px;border:1px solid #888;border-radius:6px;box-sizing:border-box}
 .btn[disabled]{opacity:.55;cursor:not-allowed}
 .galert{margin-top:10px}
+.galert{margin-top:16px;padding:14px 16px;border:2px solid var(--g);border-left-width:6px;border-radius:10px;background:color-mix(in srgb,var(--g) 9%,var(--bg))}
+.galert p{margin:0 0 8px}.galert .gat{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:1.05rem}
+.galert .gsoon{white-space:nowrap;font-size:.75rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:999px;background:var(--g);color:var(--bg)}
+.galert .gad{color:var(--mut);font-size:.95rem}.galert .gab{white-space:nowrap;display:inline-block}
+@media(max-width:22rem){header.top .menu{-webkit-mask-image:none;mask-image:none;padding-right:0;gap:.4rem;justify-content:space-between;font-size:14px;overflow:visible}header.top .menu a{white-space:nowrap}}
+.galert .gab{display:inline-flex;align-items:center;justify-content:center}
