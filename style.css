@@ -233,3 +233,18 @@ a.pcard:hover,a.pcard:focus-visible{border-color:currentColor}
 .pcard b{white-space:nowrap;font-size:17px;flex-basis:100%}.pcard .meta{white-space:nowrap}.pcard .pc{white-space:nowrap;font-size:14px;font-weight:600}
 .pcard.off{opacity:.65}
 .box ul.nlist,.nlist{list-style:none;padding:0;margin:0 0 var(--s3)}.nlist li{margin:0 0 10px}.nlist b{white-space:nowrap}
+/* What this means (glossary explainers) */
+.wtm-s{padding-top:0}.wtm{border:1px solid var(--line);border-left:4px solid var(--g);border-radius:var(--r);padding:var(--s4,14px) var(--s5,16px);background:var(--bg);max-width:68ch}
+.wtm .label{white-space:nowrap}.wtm dl{margin:8px 0 4px}.wtm dt{font-weight:700;margin-top:8px}.wtm dd{margin:2px 0 0}.wtm .meta{margin:8px 0 0}
+.wtm-c{margin-top:8px;font-size:14px}.wtm-c summary{cursor:pointer;color:var(--g);font-weight:700;white-space:nowrap;min-height:24px}.wtm-c p{margin:6px 0 0}
+.nw{white-space:nowrap}
+/* alerts */
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.soon{background:#fff4d6;color:#4a3700;border-left:4px solid #c99400;padding:10px 12px;border-radius:6px}
+.afs{border:0;padding:0;margin:0 0 14px}.afs legend{font-weight:800;font-size:15px;margin-bottom:6px}
+.cks{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:6px}
+.ck{display:flex;gap:10px;align-items:flex-start;min-height:44px;padding:8px 10px;border:1px solid #ccc8;border-radius:6px}
+.ck input{width:20px;height:20px;margin:2px 0 0;flex:none}
+.aem{width:100%;max-width:420px;min-height:44px;font-size:16px;padding:0 10px;border:1px solid #888;border-radius:6px;box-sizing:border-box}
+.btn[disabled]{opacity:.55;cursor:not-allowed}
+.galert{margin-top:10px}
