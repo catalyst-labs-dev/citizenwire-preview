@@ -259,3 +259,13 @@ a.pcard:hover,a.pcard:focus-visible{border-color:currentColor}
 .filters .chips::-webkit-scrollbar{display:none}
 .filters .chip,.filters button.chip{flex:0 0 auto;white-space:nowrap;font-size:13.5px;line-height:1.2;padding:5px 11px;min-height:32px}
 .filters .fl{margin:10px 0 4px;font-size:13px}
+/* EmailOctopus embed, styled to match */
+.athanks{background:color-mix(in srgb,var(--g) 10%,var(--bg));border-left:4px solid var(--g);padding:10px 12px;border-radius:6px;margin:12px 0}.athanks p{margin:4px 0}
+.aerr{color:#a10000;font-weight:700}
+.eowrap [data-form]{all:unset;display:block}
+.eowrap [data-form] .emailoctopus-form-wrapper,.eowrap [data-form] .form-container,.eowrap [data-form] .inline-container{padding:0!important;margin:0!important;background:none!important;border:0!important;box-shadow:none!important;max-width:420px!important;font-family:inherit!important}
+.eowrap [data-form] [eo-label="Places"],.eowrap [data-form] [eo-label="Meetings"]{display:none!important}
+.eowrap [data-form] input[type=email]{width:100%!important;max-width:420px;min-height:44px!important;font:16px/1.2 inherit!important;padding:0 10px!important;border:1px solid #888!important;border-radius:6px!important;box-sizing:border-box!important;background:var(--bg)!important;color:var(--ink)!important;margin:0 0 10px!important}
+.eowrap [data-form] input[type=submit]{min-height:44px!important;width:auto!important;padding:0 20px!important;background:var(--g)!important;color:var(--bg)!important;border:0!important;border-radius:6px!important;font:700 16px inherit!important;cursor:pointer}
+.eowrap [data-form] .mastfoot{text-align:left!important;font-size:.8rem!important;color:var(--mut)!important;margin-top:6px}.eowrap [data-form] .mastfoot p{margin:0}
+.eowrap [data-form] .emailoctopus-error-message{color:#a10000}.eowrap [data-form] .emailoctopus-success-message{color:var(--g)}
