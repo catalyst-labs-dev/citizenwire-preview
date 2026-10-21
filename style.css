@@ -226,3 +226,9 @@ header.top a:focus-visible,.sbox summary:focus-visible,.search input:focus-visib
 /* body meeting pages (polk/school-board) */
 .acts{padding-left:1.6em;margin:var(--s3) 0}.acts li{padding:var(--s2) 0;border-top:1px solid var(--panelline);overflow-wrap:anywhere}.acts li:last-child{border-bottom:1px solid var(--panelline)}.acts .at{font-weight:600}
 @media(max-width:340px){td,th{padding:var(--s2) 6px;font-size:14px}}
+.places{list-style:none;padding:0;margin:var(--s4) 0 0;display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:600px){.places{grid-template-columns:1fr 1fr}}@media(min-width:900px){.places{grid-template-columns:1fr 1fr 1fr}}
+.pcard{display:flex;flex-wrap:wrap;gap:2px 12px;align-items:baseline;border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;min-height:44px;text-decoration:none;color:inherit;background:var(--bg)}
+a.pcard:hover,a.pcard:focus-visible{border-color:currentColor}
+.pcard b{white-space:nowrap;font-size:17px;flex-basis:100%}.pcard .meta{white-space:nowrap}.pcard .pc{white-space:nowrap;font-size:14px;font-weight:600}
+.pcard.off{opacity:.65}
