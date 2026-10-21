@@ -254,3 +254,8 @@ a.pcard:hover,a.pcard:focus-visible{border-color:currentColor}
 .galert .gad{color:var(--mut);font-size:.95rem}.galert .gab{white-space:nowrap;display:inline-block}
 @media(max-width:22rem){header.top .menu{-webkit-mask-image:none;mask-image:none;padding-right:0;gap:.4rem;justify-content:space-between;font-size:14px;overflow:visible}header.top .menu a{white-space:nowrap}}
 .galert .gab{display:inline-flex;align-items:center;justify-content:center}
+/* compact filter chips: one scrollable row per group, fade cue on the right */
+.filters .chips{flex-wrap:nowrap;overflow-x:auto;gap:6px;padding:2px 24px 6px 0;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 28px),transparent)}
+.filters .chips::-webkit-scrollbar{display:none}
+.filters .chip,.filters button.chip{flex:0 0 auto;white-space:nowrap;font-size:13.5px;line-height:1.2;padding:5px 11px;min-height:32px}
+.filters .fl{margin:10px 0 4px;font-size:13px}
